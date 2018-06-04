@@ -1,0 +1,268 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo {
+  height: 45px;
+  float: left
+}
+
+.noButton {
+  float: left;
+  background: none;
+  border: none;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  outline: 0;
+}
+
+.searchLogo {
+  width: 20px;
+}
+
+.searchInput {
+  border: 0;
+  border-bottom: 1.5px solid black;
+  outline: 0;
+  font-family: "Verdana";
+  font-size: 13pt;
+  color: #AAB3A9;
+  width: 200px;
+}
+
+::placeholder {
+  color: #AAB3A9;
+}
+
+.search {
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px
+}
+
+.backDrop {
+  width: 96%;
+  padding: 20px
+}
+
+.Nav{
+  width: 100%;
+  min-height : 65px;
+}
+
+.searchResults {
+  display: flex;
+}
+
+.Results {
+  width: 100%;
+  float: bottom
+}
+
+.background {
+  background-image: url("/background2.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  width: 96%;
+  height: 85vh;
+  margin-left: 2%;
+  z-index: 0
+}
+
+.renderSquare {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  background-color: #E3EAE2;
+  margin: 20px; 
+  padding: 10px;
+  display: table; 
+  margin-left: auto;
+  margin-right: auto
+}
+
+.squareLong {
+  width: 275px;
+  height: 275px;
+  background-color: #E3EAE2;
+  margin: 20px; 
+  padding: 10px;
+  display: table; 
+  margin-left: auto;
+  margin-right: auto
+}
+
+.textInSqr{
+  vertical-align: middle;
+  display: table-cell;
+  font-family: "Verdana";
+  font-size: 13pt;
+  color: #945253;
+  font-weight: bold
+}
+
+.bgOverlay {
+  z-index: 1;
+  float: right;
+  margin-right: 5%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2.5%;
+  right: 0;
+  font-family: "Lucida Sans Unicode";
+  font-size: 15pt;
+  color: #945253;
+  font-weight: bolder;
+  word-wrap: break-word;
+  width: 35vw;
+  text-align: right
+}
+
+.banner {
+  position: relative;
+}
+
+:required {
+  box-shadow: none
+}
+
+.anaFound {
+  font-family: "Lucida Sans Unicode"
+}
+
+@media only screen and (max-width: 760px) {
+  .searchInput {
+    margin-top: 0;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .backDrop {
+   height: 90%
+  }
+
+  .background {
+    background-image: url("/mobilebackground.jpg");
+    opacity: 0.4;
+    width: 85vw;
+    height: 74vh;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .Nav{
+    min-height : 80px;
+  }
+
+  .UL {
+    display: flex;
+    padding: 5vw;
+    flex-wrap: wrap
+  }
+
+  .navSearch {
+    margin-left: 12vw;
+  }
+
+  .bgOverlay {
+    z-index: 1;
+    float: right;
+    margin-right: 7%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5%;
+    right: 0;
+    font-family: "Lucida Sans Unicode";
+    font-size: 13pt;
+    color: #945253;
+    font-weight: bolder;
+    word-wrap: break-word;
+    width: 70vw;
+    text-align: right
+  }
+
+  .renderSquare {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #E3EAE2;
+    margin: 20px; 
+    padding: 10px;
+    display: table; 
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .squareLong {
+    width: 275px;
+    height: 275px;
+    background-color: #E3EAE2;
+    margin: 20px; 
+    padding: 10px;
+    display: table; 
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .textInSqr{
+    vertical-align: middle;
+    display: table-cell;
+    font-family: "Verdana";
+    font-size: 12pt;
+    color: #945253;
+    font-weight: bold
+  }
+
+  .anaFound {
+    font-family: "Lucida Sans Unicode";
+    font-size: 17pt
+  }
+}
